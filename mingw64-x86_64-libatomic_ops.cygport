@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-libatomic_ops"
-VERSION=7.4.4
+VERSION=7.6.2
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Atomic operations library for Win32 toolchain"
