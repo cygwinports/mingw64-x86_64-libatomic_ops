@@ -2,16 +2,16 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-libatomic_ops"
-VERSION=7.6.4
+VERSION=7.6.12
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Atomic operations library for Win32 toolchain"
 DESCRIPTION="This package provides semi-portable access to hardware-provided
-atomic memory update operations on a number architectures."
+atomic memory update operations on a number of architectures."
 HOMEPAGE="https://github.com/ivmai/libatomic_ops"
-SRC_URI="http://www.ivmaisoft.com/_bin/atomic_ops/libatomic_ops-${VERSION}.tar.gz"
+SRC_URI="https://github.com/ivmai/libatomic_ops/releases/download/v${VERSION}/libatomic_ops-${VERSION}.tar.gz"
 SRC_DIR="libatomic_ops-${VERSION}"
 
-CYGCONF_ARGS="--enable-shared --enable-static"
+CYGCONF_ARGS="--enable-shared"
 MAKEOPTS+=" dist_pkgdata_DATA= "
 DOCS="doc/README_win32.txt"
